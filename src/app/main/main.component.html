@@ -1,0 +1,17 @@
+<main>
+ <div>
+  <div>
+  <input type= "text" [(ngModel)]= "newTask">
+  <button (click)="newTarea(newTask)"> Añadir tarea</button>
+  <button (click)="deleteTarea()"> Eliminar tarea</button>
+  </div>
+  <div class="padre">
+  <ul class="tasks">
+  <li  *ngFor="let list of List;let index =index" [ngClass]="{'tachado': list.isDone}">
+    <input class="checkbox" type="checkbox" [(ngModel)]="list.isDone">
+    {{list.title}}
+  </li>
+  </ul>
+  </div>
+  </div>
+</main>

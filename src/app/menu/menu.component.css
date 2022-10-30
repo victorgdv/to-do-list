@@ -1,0 +1,31 @@
+.navbar {
+  padding: 5px;
+  background: black;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.padre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+.title{
+   color: white;
+}
+
+.button{
+   display: inline;
+}
+
+.button__class{
+  background: green;
+  color: white;
+  padding: 5px;
+  border-color: green;
+}
+
+
